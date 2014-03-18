@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A60B509E18D88E7500204565 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A60B509D18D88E7500204565 /* Cocoa.framework */; };
+		A60B50A818D88E7500204565 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A60B50A618D88E7500204565 /* InfoPlist.strings */; };
+		A60B50AA18D88E7500204565 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A60B50A918D88E7500204565 /* main.m */; };
+		A60B50AE18D88E7500204565 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A60B50AC18D88E7500204565 /* Credits.rtf */; };
+		A60B50B118D88E7500204565 /* SSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A60B50B018D88E7500204565 /* SSAppDelegate.m */; };
+		A60B50B418D88E7500204565 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A60B50B218D88E7500204565 /* MainMenu.xib */; };
+		A60B50B618D88E7500204565 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60B50B518D88E7500204565 /* Images.xcassets */; };
+		A60B50BD18D88E7500204565 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A60B50BC18D88E7500204565 /* XCTest.framework */; };
+		A60B50BE18D88E7500204565 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A60B509D18D88E7500204565 /* Cocoa.framework */; };
+		A60B50C618D88E7500204565 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A60B50C418D88E7500204565 /* InfoPlist.strings */; };
+		A60B50C818D88E7500204565 /* ScrivelStudioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A60B50C718D88E7500204565 /* ScrivelStudioTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A60B50BF18D88E7500204565 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A60B509218D88E7400204565 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A60B509918D88E7500204565;
+			remoteInfo = ScrivelStudio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A60B509A18D88E7500204565 /* ScrivelStudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrivelStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60B509D18D88E7500204565 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A60B50A018D88E7500204565 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A60B50A118D88E7500204565 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A60B50A218D88E7500204565 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A60B50A518D88E7500204565 /* ScrivelStudio-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScrivelStudio-Info.plist"; sourceTree = "<group>"; };
+		A60B50A718D88E7500204565 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A60B50A918D88E7500204565 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A60B50AB18D88E7500204565 /* ScrivelStudio-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScrivelStudio-Prefix.pch"; sourceTree = "<group>"; };
+		A60B50AD18D88E7500204565 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		A60B50AF18D88E7500204565 /* SSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSAppDelegate.h; sourceTree = "<group>"; };
+		A60B50B018D88E7500204565 /* SSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAppDelegate.m; sourceTree = "<group>"; };
+		A60B50B318D88E7500204565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A60B50B518D88E7500204565 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A60B50BB18D88E7500204565 /* ScrivelStudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrivelStudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60B50BC18D88E7500204565 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A60B50C318D88E7500204565 /* ScrivelStudioTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScrivelStudioTests-Info.plist"; sourceTree = "<group>"; };
+		A60B50C518D88E7500204565 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A60B50C718D88E7500204565 /* ScrivelStudioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrivelStudioTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A60B509718D88E7500204565 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60B509E18D88E7500204565 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60B50B818D88E7500204565 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60B50BE18D88E7500204565 /* Cocoa.framework in Frameworks */,
+				A60B50BD18D88E7500204565 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A60B509118D88E7400204565 = {
+			isa = PBXGroup;
+			children = (
+				A60B50A318D88E7500204565 /* ScrivelStudio */,
+				A60B50C118D88E7500204565 /* ScrivelStudioTests */,
+				A60B509C18D88E7500204565 /* Frameworks */,
+				A60B509B18D88E7500204565 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A60B509B18D88E7500204565 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A60B509A18D88E7500204565 /* ScrivelStudio.app */,
+				A60B50BB18D88E7500204565 /* ScrivelStudioTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A60B509C18D88E7500204565 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A60B509D18D88E7500204565 /* Cocoa.framework */,
+				A60B50BC18D88E7500204565 /* XCTest.framework */,
+				A60B509F18D88E7500204565 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A60B509F18D88E7500204565 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A60B50A018D88E7500204565 /* AppKit.framework */,
+				A60B50A118D88E7500204565 /* CoreData.framework */,
+				A60B50A218D88E7500204565 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A60B50A318D88E7500204565 /* ScrivelStudio */ = {
+			isa = PBXGroup;
+			children = (
+				A60B50AF18D88E7500204565 /* SSAppDelegate.h */,
+				A60B50B018D88E7500204565 /* SSAppDelegate.m */,
+				A60B50B218D88E7500204565 /* MainMenu.xib */,
+				A60B50B518D88E7500204565 /* Images.xcassets */,
+				A60B50A418D88E7500204565 /* Supporting Files */,
+			);
+			path = ScrivelStudio;
+			sourceTree = "<group>";
+		};
+		A60B50A418D88E7500204565 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A60B50A518D88E7500204565 /* ScrivelStudio-Info.plist */,
+				A60B50A618D88E7500204565 /* InfoPlist.strings */,
+				A60B50A918D88E7500204565 /* main.m */,
+				A60B50AB18D88E7500204565 /* ScrivelStudio-Prefix.pch */,
+				A60B50AC18D88E7500204565 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A60B50C118D88E7500204565 /* ScrivelStudioTests */ = {
+			isa = PBXGroup;
+			children = (
+				A60B50C718D88E7500204565 /* ScrivelStudioTests.m */,
+				A60B50C218D88E7500204565 /* Supporting Files */,
+			);
+			path = ScrivelStudioTests;
+			sourceTree = "<group>";
+		};
+		A60B50C218D88E7500204565 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A60B50C318D88E7500204565 /* ScrivelStudioTests-Info.plist */,
+				A60B50C418D88E7500204565 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A60B509918D88E7500204565 /* ScrivelStudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60B50CB18D88E7500204565 /* Build configuration list for PBXNativeTarget "ScrivelStudio" */;
+			buildPhases = (
+				A60B509618D88E7500204565 /* Sources */,
+				A60B509718D88E7500204565 /* Frameworks */,
+				A60B509818D88E7500204565 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrivelStudio;
+			productName = ScrivelStudio;
+			productReference = A60B509A18D88E7500204565 /* ScrivelStudio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A60B50BA18D88E7500204565 /* ScrivelStudioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60B50CE18D88E7500204565 /* Build configuration list for PBXNativeTarget "ScrivelStudioTests" */;
+			buildPhases = (
+				A60B50B718D88E7500204565 /* Sources */,
+				A60B50B818D88E7500204565 /* Frameworks */,
+				A60B50B918D88E7500204565 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A60B50C018D88E7500204565 /* PBXTargetDependency */,
+			);
+			name = ScrivelStudioTests;
+			productName = ScrivelStudioTests;
+			productReference = A60B50BB18D88E7500204565 /* ScrivelStudioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A60B509218D88E7400204565 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = scrivel;
+				TargetAttributes = {
+					A60B50BA18D88E7500204565 = {
+						TestTargetID = A60B509918D88E7500204565;
+					};
+				};
+			};
+			buildConfigurationList = A60B509518D88E7400204565 /* Build configuration list for PBXProject "ScrivelStudio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A60B509118D88E7400204565;
+			productRefGroup = A60B509B18D88E7500204565 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A60B509918D88E7500204565 /* ScrivelStudio */,
+				A60B50BA18D88E7500204565 /* ScrivelStudioTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A60B509818D88E7500204565 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60B50A818D88E7500204565 /* InfoPlist.strings in Resources */,
+				A60B50B618D88E7500204565 /* Images.xcassets in Resources */,
+				A60B50AE18D88E7500204565 /* Credits.rtf in Resources */,
+				A60B50B418D88E7500204565 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60B50B918D88E7500204565 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60B50C618D88E7500204565 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A60B509618D88E7500204565 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60B50B118D88E7500204565 /* SSAppDelegate.m in Sources */,
+				A60B50AA18D88E7500204565 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60B50B718D88E7500204565 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60B50C818D88E7500204565 /* ScrivelStudioTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A60B50C018D88E7500204565 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A60B509918D88E7500204565 /* ScrivelStudio */;
+			targetProxy = A60B50BF18D88E7500204565 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A60B50A618D88E7500204565 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A60B50A718D88E7500204565 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A60B50AC18D88E7500204565 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A60B50AD18D88E7500204565 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		A60B50B218D88E7500204565 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A60B50B318D88E7500204565 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		A60B50C418D88E7500204565 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A60B50C518D88E7500204565 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A60B50C918D88E7500204565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A60B50CA18D88E7500204565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A60B50CC18D88E7500204565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScrivelStudio/ScrivelStudio-Prefix.pch";
+				INFOPLIST_FILE = "ScrivelStudio/ScrivelStudio-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A60B50CD18D88E7500204565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScrivelStudio/ScrivelStudio-Prefix.pch";
+				INFOPLIST_FILE = "ScrivelStudio/ScrivelStudio-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A60B50CF18D88E7500204565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ScrivelStudio.app/Contents/MacOS/ScrivelStudio";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScrivelStudio/ScrivelStudio-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ScrivelStudioTests/ScrivelStudioTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A60B50D018D88E7500204565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ScrivelStudio.app/Contents/MacOS/ScrivelStudio";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScrivelStudio/ScrivelStudio-Prefix.pch";
+				INFOPLIST_FILE = "ScrivelStudioTests/ScrivelStudioTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A60B509518D88E7400204565 /* Build configuration list for PBXProject "ScrivelStudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60B50C918D88E7500204565 /* Debug */,
+				A60B50CA18D88E7500204565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60B50CB18D88E7500204565 /* Build configuration list for PBXNativeTarget "ScrivelStudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60B50CC18D88E7500204565 /* Debug */,
+				A60B50CD18D88E7500204565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A60B50CE18D88E7500204565 /* Build configuration list for PBXNativeTarget "ScrivelStudioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60B50CF18D88E7500204565 /* Debug */,
+				A60B50D018D88E7500204565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A60B509218D88E7400204565 /* Project object */;
+}
