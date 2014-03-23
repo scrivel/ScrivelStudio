@@ -1,6 +1,6 @@
 'use strict';
 
-class ScrivelStudio.Models.Method extends Backbone.Model
+class ss.Models.Method extends Backbone.Model
 
   initialize: () ->
 

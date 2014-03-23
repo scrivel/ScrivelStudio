@@ -1,6 +1,6 @@
 'use strict';
 
-class ScrivelStudio.Models.Words extends ScrivelStudio.Models.Element
+class ss.Models.Words extends ScrivelStudio.Models.Element
 
   initialize: () ->
 

@@ -1,4 +1,4 @@
 'use strict';
 
-class ScrivelStudio.Collections.Element extends Backbone.Collection
-  model: ScrivelStudio.Models.Element
+class ss.Collections.Element extends Backbone.Collection
+  model: ss.Models.Element

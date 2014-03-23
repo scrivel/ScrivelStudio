@@ -1,11 +1,10 @@
-window.app = window.ScrivelStudio =
+window.ss = window.ScrivelStudio =
   Models: {}
   Collections: {}
   Views: {}
   Routers: {}
-  init: ->
-    'use strict'
-    console.log 'Hello from Backbone!'
+# runtime
 $ ->
   'use strict'
-  ScrivelStudio.init();
+  @app = new ss.App
+  @app.init()

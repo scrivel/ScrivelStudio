@@ -1,8 +1,8 @@
 'use strict';
 
-class ScrivelStudio.Views.App extends Backbone.View
+class ss.Views.App extends Backbone.View
 
-  template: JST['app/scripts/templates/app.ejs']
+  template: JST['app/scripts/templates/ss.ejs']
 
   tagName: 'div'
 

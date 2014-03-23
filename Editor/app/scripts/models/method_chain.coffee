@@ -1,6 +1,6 @@
 'use strict';
 
-class ScrivelStudio.Models.MethodChain extends ScrivelStudio.Models.Element
+class ss.Models.MethodChain extends ss.Models.Element
 
   initialize: () ->
 
