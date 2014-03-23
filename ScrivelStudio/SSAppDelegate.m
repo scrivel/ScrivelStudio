@@ -13,6 +13,9 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    SSMainWindowController *mwc = [[SSMainWindowController alloc] initWithWindowNibName:@"MainWindow"];
+    [mwc showWindow:self];
+    self.mainWindowController = mwc;
 }
 
 @end

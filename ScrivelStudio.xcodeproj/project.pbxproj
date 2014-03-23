@@ -18,6 +18,8 @@
 		A60B50BE18D88E7500204565 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A60B509D18D88E7500204565 /* Cocoa.framework */; };
 		A60B50C618D88E7500204565 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A60B50C418D88E7500204565 /* InfoPlist.strings */; };
 		A60B50C818D88E7500204565 /* ScrivelStudioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A60B50C718D88E7500204565 /* ScrivelStudioTests.m */; };
+		A60B50D318D88EFF00204565 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A60B50D118D88EFF00204565 /* MainWindow.xib */; };
+		A60B50D618D88F1D00204565 /* SSMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = A60B50D518D88F1D00204565 /* SSMainWindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,9 @@
 		A60B50C318D88E7500204565 /* ScrivelStudioTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScrivelStudioTests-Info.plist"; sourceTree = "<group>"; };
 		A60B50C518D88E7500204565 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A60B50C718D88E7500204565 /* ScrivelStudioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrivelStudioTests.m; sourceTree = "<group>"; };
+		A60B50D218D88EFF00204565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		A60B50D418D88F1D00204565 /* SSMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMainWindowController.h; sourceTree = "<group>"; };
+		A60B50D518D88F1D00204565 /* SSMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMainWindowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +123,7 @@
 				A60B50AF18D88E7500204565 /* SSAppDelegate.h */,
 				A60B50B018D88E7500204565 /* SSAppDelegate.m */,
 				A60B50B218D88E7500204565 /* MainMenu.xib */,
+				A60B50D718D9C47300204565 /* MainWindow */,
 				A60B50B518D88E7500204565 /* Images.xcassets */,
 				A60B50A418D88E7500204565 /* Supporting Files */,
 			);
@@ -152,6 +158,16 @@
 				A60B50C418D88E7500204565 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A60B50D718D9C47300204565 /* MainWindow */ = {
+			isa = PBXGroup;
+			children = (
+				A60B50D418D88F1D00204565 /* SSMainWindowController.h */,
+				A60B50D518D88F1D00204565 /* SSMainWindowController.m */,
+				A60B50D118D88EFF00204565 /* MainWindow.xib */,
+			);
+			name = MainWindow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A60B50A818D88E7500204565 /* InfoPlist.strings in Resources */,
+				A60B50D318D88EFF00204565 /* MainWindow.xib in Resources */,
 				A60B50B618D88E7500204565 /* Images.xcassets in Resources */,
 				A60B50AE18D88E7500204565 /* Credits.rtf in Resources */,
 				A60B50B418D88E7500204565 /* MainMenu.xib in Resources */,
@@ -253,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A60B50D618D88F1D00204565 /* SSMainWindowController.m in Sources */,
 				A60B50B118D88E7500204565 /* SSAppDelegate.m in Sources */,
 				A60B50AA18D88E7500204565 /* main.m in Sources */,
 			);
@@ -307,6 +325,14 @@
 				A60B50C518D88E7500204565 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A60B50D118D88EFF00204565 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A60B50D218D88EFF00204565 /* Base */,
+			);
+			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -467,6 +493,7 @@
 				A60B50CD18D88E7500204565 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A60B50CE18D88E7500204565 /* Build configuration list for PBXNativeTarget "ScrivelStudioTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +502,7 @@
 				A60B50D018D88E7500204565 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
