@@ -2,18 +2,11 @@
 
 class ss.Views.App extends Backbone.View
 
-  template: JST['app/scripts/templates/ss.ejs']
-
-  tagName: 'div'
-
-  id: ''
-
-  className: ''
-
+  el : $("#app")
   events: {}
 
   initialize: () ->
     @listenTo @model, 'change', @render
 
   render: () ->
-    @$el.html @template(@model.toJSON())
+    @$el.html @template(@model)

@@ -1,0 +1,6 @@
+<p>mehodChain : <%= get("target") %></p>
+<ul>
+<% _.each(get("methods"), function(v,i) { %>
+  <li><%= v.name %></li>
+<% }); %>
+</ul>

@@ -5,7 +5,7 @@ class ss.Models.Words extends ScrivelStudio.Models.Element
   initialize: () ->
 
   defaults: {
-    "character" : "undefined"
+    "character" : null
     "arguments" : [
       "",
       {}
