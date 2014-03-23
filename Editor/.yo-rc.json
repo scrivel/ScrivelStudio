@@ -1,7 +1,7 @@
 {
   "generator-backbone": {
     "appPath": "app",
-    "appName": "Editor",
+    "appName": "ss",
     "coffee": true,
     "testFramework": "mocha",
     "templateFramework": "lodash",
