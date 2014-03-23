@@ -1,0 +1,1740 @@
+{
+  "elements" : [
+    {
+      "range_of_lines" : {
+        "location" : 2,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "Scripts.bundle\/init.sescript"
+          ],
+          "name" : "load",
+          "target" : null,
+          "line_number" : 2
+        }
+      ],
+      "type" : "normal",
+      "target" : "app"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 4,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            1
+          ],
+          "name" : "wait",
+          "target" : null,
+          "line_number" : 4
+        }
+      ],
+      "type" : "normal",
+      "target" : "app"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 5,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "bg"
+          ],
+          "name" : "get",
+          "target" : null,
+          "line_number" : 5
+        },
+        {
+          "arguments" : [
+            2
+          ],
+          "name" : "fadeIn",
+          "target" : null,
+          "line_number" : 5
+        }
+      ],
+      "type" : "normal",
+      "target" : "layer"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 7,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "textbg"
+          ],
+          "name" : "get",
+          "target" : null,
+          "line_number" : 7
+        },
+        {
+          "arguments" : [
+            2
+          ],
+          "name" : "fadeIn",
+          "target" : null,
+          "line_number" : 7
+        }
+      ],
+      "type" : "normal",
+      "target" : "layer"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 9,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+
+          ],
+          "name" : "waitAnimation",
+          "target" : null,
+          "line_number" : 9
+        }
+      ],
+      "type" : "normal",
+      "target" : "app"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 11,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "つむぎ"
+          ],
+          "name" : "get",
+          "target" : null,
+          "line_number" : 11
+        },
+        {
+          "arguments" : [
+            1
+          ],
+          "name" : "fadeIn",
+          "target" : null,
+          "line_number" : 11
+        }
+      ],
+      "type" : "normal",
+      "target" : "chara"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 13,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            1
+          ],
+          "name" : "wait",
+          "target" : null,
+          "line_number" : 13
+        }
+      ],
+      "type" : "normal",
+      "target" : "app"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 15,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            1
+          ],
+          "name" : "fadeIn",
+          "target" : null,
+          "line_number" : 15
+        },
+        {
+          "arguments" : [
+
+          ],
+          "name" : "waitAnimation",
+          "target" : null,
+          "line_number" : 15
+        },
+        {
+          "arguments" : [
+            1
+          ],
+          "name" : "wait",
+          "target" : null,
+          "line_number" : 15
+        }
+      ],
+      "type" : "character",
+      "target" : "ななみ"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 16,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "jump",
+            0.2
+          ],
+          "name" : "do",
+          "target" : null,
+          "line_number" : 16
+        },
+        {
+          "arguments" : [
+
+          ],
+          "name" : "waitAnimation",
+          "target" : null,
+          "line_number" : 16
+        }
+      ],
+      "type" : "character",
+      "target" : "ななみ"
+    },
+    {
+      "character" : "ななみ",
+      "arguments" : [
+        "やっほー！　ぷちっと！クチュリエールの世界へようこそ！"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "character" : "ななみ",
+      "arguments" : [
+        "あたし平針ななみ！　羽衣学園中学2年でクチュリエールやってまーっす！"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "range_of_lines" : {
+        "location" : 19,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "jump",
+            0.1
+          ],
+          "name" : "do",
+          "target" : null,
+          "line_number" : 19
+        },
+        {
+          "arguments" : [
+
+          ],
+          "name" : "waitAnimation",
+          "target" : null,
+          "line_number" : 19
+        }
+      ],
+      "type" : "character",
+      "target" : "つむぎ"
+    },
+    {
+      "character" : "つむぎ",
+      "arguments" : [
+        "わ、わ、え、えっと、わ、わたしのにゃまえは……"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "range_of_lines" : {
+        "location" : 21,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "jump",
+            0.1
+          ],
+          "name" : "do",
+          "target" : null,
+          "line_number" : 21
+        },
+        {
+          "arguments" : [
+
+          ],
+          "name" : "waitAnimation",
+          "target" : null,
+          "line_number" : 21
+        }
+      ],
+      "type" : "character",
+      "target" : "つむぎ"
+    },
+    {
+      "character" : "つむぎ",
+      "arguments" : [
+        "〜〜〜〜〜〜〜！"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "character" : "ななみ",
+      "arguments" : [
+        "あはは、つむぎ慌てすぎ！"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "character" : "つむぎ",
+      "arguments" : [
+        "うう…ななみちゃんなんでそんなに落ち着いてるの…？"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "character" : "ななみ",
+      "arguments" : [
+        "えー？　そりゃああれですよ、あれ。"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "character" : "つむぎ",
+      "arguments" : [
+        "あれ……？"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "character" : "ななみ",
+      "arguments" : [
+        "……"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "range_of_lines" : {
+        "location" : 28,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "text"
+          ],
+          "name" : "get",
+          "target" : null,
+          "line_number" : 28
+        },
+        {
+          "arguments" : [
+            "fontSize",
+            30
+          ],
+          "name" : "set",
+          "target" : null,
+          "line_number" : 28
+        }
+      ],
+      "type" : "normal",
+      "target" : "text"
+    },
+    {
+      "character" : "ななみ",
+      "arguments" : [
+        "忘れた！！"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "range_of_lines" : {
+        "location" : 30,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "text"
+          ],
+          "name" : "get",
+          "target" : null,
+          "line_number" : 30
+        },
+        {
+          "arguments" : [
+            "fontSize",
+            22
+          ],
+          "name" : "set",
+          "target" : null,
+          "line_number" : 30
+        }
+      ],
+      "type" : "normal",
+      "target" : "text"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 38,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            {
+              "translate" : [
+                0,
+                "10%"
+              ]
+            },
+            {
+              "timing" : "ease",
+              "autoreverses" : true,
+              "repeatCount" : 2,
+              "duration" : 0.1
+            }
+          ],
+          "name" : "animate",
+          "target" : null,
+          "line_number" : 38
+        }
+      ],
+      "type" : "character",
+      "target" : "つむぎ"
+    },
+    {
+      "character" : "つむぎ",
+      "arguments" : [
+        "ええー！！"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "range_of_lines" : {
+        "location" : 40,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "text"
+          ],
+          "name" : "get",
+          "target" : null,
+          "line_number" : 40
+        },
+        {
+          "arguments" : [
+            "fontSize",
+            16
+          ],
+          "name" : "set",
+          "target" : null,
+          "line_number" : 40
+        }
+      ],
+      "type" : "normal",
+      "target" : "text"
+    },
+    {
+      "character" : "ななみ",
+      "arguments" : [
+        "あはは、まぁいいじゃん。ほら、みんなポカーンってなっちゃってるよ。"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "range_of_lines" : {
+        "location" : 42,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "jump",
+            0.1
+          ],
+          "name" : "do",
+          "target" : null,
+          "line_number" : 42
+        }
+      ],
+      "type" : "character",
+      "target" : "つむぎ"
+    },
+    {
+      "character" : "つむぎ",
+      "arguments" : [
+        "はう！ た、たいへん……！"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "character" : "つむぎ",
+      "arguments" : [
+        "え、ええと、わたしたちはクチュリエールといってですね、困っている人たちのほつれた心の糸を……"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "character" : "ななみ",
+      "arguments" : [
+        "……"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "range_of_lines" : {
+        "location" : 50,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            {
+              "position" : [
+                "60%",
+                "10%"
+              ]
+            },
+            {
+              "duration" : 2
+            }
+          ],
+          "name" : "animate",
+          "target" : null,
+          "line_number" : 50
+        },
+        {
+          "arguments" : [
+
+          ],
+          "name" : "waitAnimation",
+          "target" : null,
+          "line_number" : 50
+        }
+      ],
+      "type" : "character",
+      "target" : "ななみ"
+    },
+    {
+      "character" : "ななみ",
+      "arguments" : [
+        "………"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "character" : "つむぎ",
+      "arguments" : [
+        "な、ななみちゃん、どうしたの……？"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "range_of_lines" : {
+        "location" : 53,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "fontSize",
+            30
+          ],
+          "name" : "set",
+          "target" : null,
+          "line_number" : 53
+        }
+      ],
+      "type" : "normal",
+      "target" : "text"
+    },
+    {
+      "character" : "ななみ",
+      "arguments" : [
+        "やあ！！"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "range_of_lines" : {
+        "location" : 61,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            {
+              "rotate" : 10
+            },
+            {
+              "autoreverses" : true,
+              "duration" : 0.2,
+              "timing" : "ease"
+            }
+          ],
+          "name" : "animate",
+          "target" : null,
+          "line_number" : 61
+        },
+        {
+          "arguments" : [
+
+          ],
+          "name" : "waitAnimation",
+          "target" : null,
+          "line_number" : 61
+        }
+      ],
+      "type" : "character",
+      "target" : "ななみ"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 62,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "jump",
+            0.1
+          ],
+          "name" : "do",
+          "target" : null,
+          "line_number" : 62
+        }
+      ],
+      "type" : "character",
+      "target" : "つむぎ"
+    },
+    {
+      "character" : "つむぎ",
+      "arguments" : [
+        "わあああ！！"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "range_of_lines" : {
+        "location" : 64,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            {
+              "position" : [
+                "75%",
+                "10%"
+              ]
+            },
+            {
+              "duration" : 0.2
+            }
+          ],
+          "name" : "animate",
+          "target" : null,
+          "line_number" : 64
+        }
+      ],
+      "type" : "character",
+      "target" : "ななみ"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 65,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "text"
+          ],
+          "name" : "get",
+          "target" : null,
+          "line_number" : 65
+        },
+        {
+          "arguments" : [
+            "fontSize",
+            16
+          ],
+          "name" : "set",
+          "target" : null,
+          "line_number" : 65
+        }
+      ],
+      "type" : "normal",
+      "target" : "text"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 70,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            {
+              "translate" : [
+                0,
+                "-5%"
+              ]
+            },
+            {
+              "duration" : 1
+            }
+          ],
+          "name" : "animate",
+          "target" : null,
+          "line_number" : 70
+        },
+        {
+          "arguments" : [
+
+          ],
+          "name" : "waitAnimation",
+          "target" : null,
+          "line_number" : 70
+        },
+        {
+          "arguments" : [
+            1
+          ],
+          "name" : "wait",
+          "target" : null,
+          "line_number" : 70
+        }
+      ],
+      "type" : "character",
+      "target" : "つむぎ"
+    },
+    {
+      "character" : "つむぎ",
+      "arguments" : [
+        "ふぇぇ、ななみちゃんなにをするの……"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "range_of_lines" : {
+        "location" : 72,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "text"
+          ],
+          "name" : "get",
+          "target" : null,
+          "line_number" : 72
+        },
+        {
+          "arguments" : [
+            "fontSize",
+            30
+          ],
+          "name" : "set",
+          "target" : null,
+          "line_number" : 72
+        }
+      ],
+      "type" : "normal",
+      "target" : "text"
+    },
+    {
+      "character" : "ななみ",
+      "arguments" : [
+        "かたい！　かたいよつむぎ！"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "range_of_lines" : {
+        "location" : 74,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "text"
+          ],
+          "name" : "get",
+          "target" : null,
+          "line_number" : 74
+        },
+        {
+          "arguments" : [
+            "fontSize",
+            16
+          ],
+          "name" : "set",
+          "target" : null,
+          "line_number" : 74
+        }
+      ],
+      "type" : "normal",
+      "target" : "text"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 80,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            {
+              "translate" : [
+                0,
+                "5%"
+              ]
+            },
+            {
+              "timing" : "ease-out",
+              "duration" : 1
+            }
+          ],
+          "name" : "animate",
+          "target" : null,
+          "line_number" : 80
+        }
+      ],
+      "type" : "character",
+      "target" : "つむぎ"
+    },
+    {
+      "character" : "つむぎ",
+      "arguments" : [
+        "そ、そうかなぁ〜"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "character" : "ななみ",
+      "arguments" : [
+        "もっと笑って、はきはきしゃべらないと、ゲームのよさが伝わらないよ？"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "character" : "つむぎ",
+      "arguments" : [
+        "う、うん……"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "character" : "ななみ",
+      "arguments" : [
+        "さ、笑顔笑顔♡"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "character" : "つむぎ",
+      "arguments" : [
+        "……"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "character" : "つむぎ",
+      "arguments" : [
+        "…………"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "range_of_lines" : {
+        "location" : 87,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "text"
+          ],
+          "name" : "get",
+          "target" : null,
+          "line_number" : 87
+        },
+        {
+          "arguments" : [
+            "fontSize",
+            30
+          ],
+          "name" : "set",
+          "target" : null,
+          "line_number" : 87
+        }
+      ],
+      "type" : "normal",
+      "target" : "text"
+    },
+    {
+      "character" : "つむぎ",
+      "arguments" : [
+        "やっぱりむり〜〜！！"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "range_of_lines" : {
+        "location" : 92,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            {
+              "to" : "left",
+              "duration" : 0.1
+            }
+          ],
+          "name" : "exit",
+          "target" : null,
+          "line_number" : 92
+        }
+      ],
+      "type" : "character",
+      "target" : "つむぎ"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 93,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "text"
+          ],
+          "name" : "get",
+          "target" : null,
+          "line_number" : 93
+        },
+        {
+          "arguments" : [
+            "fontSize",
+            16
+          ],
+          "name" : "set",
+          "target" : null,
+          "line_number" : 93
+        }
+      ],
+      "type" : "normal",
+      "target" : "text"
+    },
+    {
+      "character" : "ななみ",
+      "arguments" : [
+        "あ、つむぎ、こらまてっ"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "range_of_lines" : {
+        "location" : 99,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            {
+              "to" : "left",
+              "duration" : 0.2
+            }
+          ],
+          "name" : "exit",
+          "target" : null,
+          "line_number" : 99
+        }
+      ],
+      "type" : "character",
+      "target" : "ななみ"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 100,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "text"
+          ],
+          "name" : "get",
+          "target" : null,
+          "line_number" : 100
+        },
+        {
+          "arguments" : [
+
+          ],
+          "name" : "clear",
+          "target" : null,
+          "line_number" : 100
+        }
+      ],
+      "type" : "normal",
+      "target" : "text"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 102,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            3
+          ],
+          "name" : "wait",
+          "target" : null,
+          "line_number" : 102
+        }
+      ],
+      "type" : "normal",
+      "target" : "app"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 112,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            {
+              "anchorPoint" : [
+                0.5,
+                0
+              ],
+              "key" : "まとい",
+              "image" : "Demo.bundle\/matoi.png",
+              "index" : 4
+            }
+          ],
+          "name" : "new",
+          "target" : null,
+          "line_number" : 112
+        },
+        {
+          "arguments" : [
+            {
+              "rotateY" : 180,
+              "position" : [
+                "150%",
+                0
+              ]
+            }
+          ],
+          "name" : "animate",
+          "target" : null,
+          "line_number" : 112
+        }
+      ],
+      "type" : "normal",
+      "target" : "chara"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 118,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            {
+              "at" : "right",
+              "duration" : 2,
+              "from" : "right"
+            }
+          ],
+          "name" : "appear",
+          "target" : null,
+          "line_number" : 118
+        }
+      ],
+      "type" : "character",
+      "target" : "まとい"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 120,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            2
+          ],
+          "name" : "wait",
+          "target" : null,
+          "line_number" : 120
+        }
+      ],
+      "type" : "normal",
+      "target" : "app"
+    },
+    {
+      "character" : "まとい",
+      "arguments" : [
+        "ふん。まったくあんな子達がクチュリエールだなんて、この街の妖精たちはいったい何を考えているのかしら。"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "character" : "まとい",
+      "arguments" : [
+        "というわけで今回のデモはこれでおしまいよ。"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "character" : "まとい",
+      "arguments" : [
+        "……と、言ってもほとんど何も説明していないのだけれど。"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "character" : "まとい",
+      "arguments" : [
+        "まぁいいわ。それじゃあ……"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "range_of_lines" : {
+        "location" : 125,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "text"
+          ],
+          "name" : "get",
+          "target" : null,
+          "line_number" : 125
+        },
+        {
+          "arguments" : [
+            "fontSize",
+            22
+          ],
+          "name" : "set",
+          "target" : null,
+          "line_number" : 125
+        }
+      ],
+      "type" : "normal",
+      "target" : "text"
+    },
+    {
+      "character" : "ななみ",
+      "arguments" : [
+        "まてー！　つむぎー！"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "range_of_lines" : {
+        "location" : 127,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            {
+              "translate" : [
+                "150%",
+                0
+              ]
+            },
+            {
+              "duration" : 0.4
+            }
+          ],
+          "name" : "animate",
+          "target" : null,
+          "line_number" : 127
+        },
+        {
+          "arguments" : [
+            0.2
+          ],
+          "name" : "wait",
+          "target" : null,
+          "line_number" : 127
+        }
+      ],
+      "type" : "character",
+      "target" : "つむぎ"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 128,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            {
+              "translate" : [
+                "150%",
+                0
+              ]
+            },
+            {
+              "duration" : 0.4
+            }
+          ],
+          "name" : "animate",
+          "target" : null,
+          "line_number" : 128
+        }
+      ],
+      "type" : "character",
+      "target" : "ななみ"
+    },
+    {
+      "character" : "つむぎ",
+      "arguments" : [
+        "いやー！　もうぜったむりだもんー！"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "range_of_lines" : {
+        "location" : 130,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "text"
+          ],
+          "name" : "get",
+          "target" : null,
+          "line_number" : 130
+        },
+        {
+          "arguments" : [
+            "fontSize",
+            16
+          ],
+          "name" : "set",
+          "target" : null,
+          "line_number" : 130
+        }
+      ],
+      "type" : "normal",
+      "target" : "text"
+    },
+    {
+      "character" : "まとい",
+      "arguments" : [
+        "……"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "character" : "まとい",
+      "arguments" : [
+        "それじゃあ……"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "range_of_lines" : {
+        "location" : 133,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "text"
+          ],
+          "name" : "get",
+          "target" : null,
+          "line_number" : 133
+        },
+        {
+          "arguments" : [
+            "fontSize",
+            22
+          ],
+          "name" : "set",
+          "target" : null,
+          "line_number" : 133
+        }
+      ],
+      "type" : "normal",
+      "target" : "text"
+    },
+    {
+      "character" : "つむぎ",
+      "arguments" : [
+        "ぴゃああ〜〜！！"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "range_of_lines" : {
+        "location" : 135,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            {
+              "translate" : [
+                "-150%",
+                0
+              ]
+            },
+            {
+              "duration" : 0.4
+            }
+          ],
+          "name" : "animate",
+          "target" : null,
+          "line_number" : 135
+        },
+        {
+          "arguments" : [
+            0.2
+          ],
+          "name" : "wait",
+          "target" : null,
+          "line_number" : 135
+        }
+      ],
+      "type" : "character",
+      "target" : "つむぎ"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 136,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            {
+              "translate" : [
+                "-150%",
+                0
+              ]
+            },
+            {
+              "duration" : 0.4
+            }
+          ],
+          "name" : "animate",
+          "target" : null,
+          "line_number" : 136
+        }
+      ],
+      "type" : "character",
+      "target" : "ななみ"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 137,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "text"
+          ],
+          "name" : "get",
+          "target" : null,
+          "line_number" : 137
+        },
+        {
+          "arguments" : [
+            "fontSize",
+            16
+          ],
+          "name" : "set",
+          "target" : null,
+          "line_number" : 137
+        }
+      ],
+      "type" : "normal",
+      "target" : "text"
+    },
+    {
+      "character" : "まとい",
+      "arguments" : [
+        "……"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "character" : "まとい",
+      "arguments" : [
+        "……"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "range_of_lines" : {
+        "location" : 147,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            {
+              "translate" : [
+                0,
+                "10%"
+              ]
+            },
+            {
+              "timing" : "ease",
+              "autoreverses" : true,
+              "repeatCount" : 3,
+              "duration" : 0.1
+            }
+          ],
+          "name" : "animate",
+          "target" : null,
+          "line_number" : 147
+        },
+        {
+          "arguments" : [
+
+          ],
+          "name" : "waitAnimation",
+          "target" : null,
+          "line_number" : 147
+        }
+      ],
+      "type" : "character",
+      "target" : "まとい"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 148,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            "text"
+          ],
+          "name" : "get",
+          "target" : null,
+          "line_number" : 148
+        },
+        {
+          "arguments" : [
+            "fontSize",
+            30
+          ],
+          "name" : "set",
+          "target" : null,
+          "line_number" : 148
+        }
+      ],
+      "type" : "normal",
+      "target" : "text"
+    },
+    {
+      "character" : "まとい",
+      "arguments" : [
+        "ふたりとも待ちなさーい！！！"
+      ],
+      "range_of_lines" : {
+        "location" : 0,
+        "length" : 0
+      }
+    },
+    {
+      "range_of_lines" : {
+        "location" : 154,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            {
+              "to" : "left",
+              "timing" : "ease-in",
+              "duration" : 0.1
+            }
+          ],
+          "name" : "exit",
+          "target" : null,
+          "line_number" : 154
+        }
+      ],
+      "type" : "character",
+      "target" : "まとい"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 164,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            {
+              "bgColor" : "#000000",
+              "index" : 900,
+              "key" : "transaction"
+            }
+          ],
+          "name" : "new",
+          "target" : null,
+          "line_number" : 164
+        },
+        {
+          "arguments" : [
+
+          ],
+          "name" : "hide",
+          "target" : null,
+          "line_number" : 164
+        },
+        {
+          "arguments" : [
+            {
+              "size" : [
+                "100%",
+                "100%"
+              ]
+            }
+          ],
+          "name" : "animate",
+          "target" : null,
+          "line_number" : 164
+        },
+        {
+          "arguments" : [
+            2
+          ],
+          "name" : "fadeIn",
+          "target" : null,
+          "line_number" : 164
+        },
+        {
+          "arguments" : [
+
+          ],
+          "name" : "waitAnimation",
+          "target" : null,
+          "line_number" : 164
+        }
+      ],
+      "type" : "normal",
+      "target" : "layer"
+    },
+    {
+      "range_of_lines" : {
+        "location" : 175,
+        "length" : 1
+      },
+      "methods" : [
+        {
+          "arguments" : [
+            {
+              "index" : 901,
+              "interval" : 0.5,
+              "key" : "last",
+              "color" : "#FFFFFF",
+              "textAlign" : "center",
+              "fontSize" : 30
+            }
+          ],
+          "name" : "new",
+          "target" : null,
+          "line_number" : 175
+        },
+        {
+          "arguments" : [
+            {
+              "size" : [
+                "100%",
+                "10%"
+              ],
+              "position" : [
+                "50%",
+                "50%"
+              ]
+            }
+          ],
+          "name" : "animate",
+          "target" : null,
+          "line_number" : 175
+        },
+        {
+          "arguments" : [
+
+          ],
+          "name" : "waitAnimation",
+          "target" : null,
+          "line_number" : 175
+        },
+        {
+          "arguments" : [
+            "おしまい"
+          ],
+          "name" : "setText",
+          "target" : null,
+          "line_number" : 175
+        }
+      ],
+      "type" : "normal",
+      "target" : "text"
+    }
+  ]
+}
