@@ -6,6 +6,9 @@ class ss.Views.Words extends Backbone.View
 
   tagName: 'div'
 
+  id: ->
+    this.model.uuid
+
   className: 'ss-words'
 
   events: {}

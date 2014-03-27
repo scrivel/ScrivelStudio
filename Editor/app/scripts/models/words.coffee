@@ -2,7 +2,8 @@
 
 class ss.Models.Words extends ScrivelStudio.Models.Element
 
-  initialize: () ->
+  initialize: (obj) ->
+    super obj
 
   defaults: {
     "character" : null

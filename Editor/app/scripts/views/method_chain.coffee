@@ -6,7 +6,10 @@ class ss.Views.MethodChain extends Backbone.View
 
   tagName: 'div'
 
-  className: 'se-method-chain'
+  id: ->
+    this.model.uuid
+
+  className: 'ss-method-chain'
 
   events: {}
 

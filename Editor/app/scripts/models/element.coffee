@@ -2,8 +2,10 @@
 
 class ss.Models.Element extends Backbone.Model
 
-  initialize: () ->
-
+  initialize: (obj) ->
+    @uuid = @createUUID()
+  createUUID: ->
+    return this.get("range_of_lines").location + "-" + this.get("range_of_lines").length + "-" + Math.floor(Math.random()*1000).toString()
   defaults: {
     "range_of_lines" :
       location : -1

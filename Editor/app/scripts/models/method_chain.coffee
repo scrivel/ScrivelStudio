@@ -2,8 +2,8 @@
 
 class ss.Models.MethodChain extends ss.Models.Element
 
-  initialize: () ->
-
+  initialize: (obj) ->
+    super obj
   defaults: {
     "methods" : []
     "type" : "normal"
