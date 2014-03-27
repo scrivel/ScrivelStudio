@@ -1,6 +1,11 @@
 <p>mehodChain : <%= get("target") %></p>
 <ul>
-<% _.each(get("methods"), function(v,i) { %>
-  <li><%= v.name %></li>
+<% _.each(get("methods"), function(m,i) { %>
+  <li><%= m.name %></li>
+  <ul>
+    <% _.each(m.arguments, function(a, j) {  %>
+      <%= view_helper.draw_value(a) %>
+    <% }); %>
+  </ul>
 <% }); %>
 </ul>

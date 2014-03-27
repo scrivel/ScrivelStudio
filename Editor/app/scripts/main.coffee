@@ -2,6 +2,7 @@ window.ss = window.ScrivelStudio =
   Models: {}
   Collections: {}
   Views: {}
+  ViewHelpers: {}
   Routers: {}
 # runtime
 $ ->

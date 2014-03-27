@@ -9,8 +9,9 @@ class ss.Models.MethodChain extends ss.Models.Element
     "type" : "normal"
     "target" : "app"
   }
-
   validate: (attrs, options) ->
+
+  view_helper: new ss.ViewHelpers.MethodChain
 
   parse: (response, options) ->
     response
