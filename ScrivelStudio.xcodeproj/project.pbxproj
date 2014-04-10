@@ -55,6 +55,7 @@
 		A60B50D218D88EFF00204565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		A60B50D418D88F1D00204565 /* SSMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMainWindowController.h; sourceTree = "<group>"; };
 		A60B50D518D88F1D00204565 /* SSMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMainWindowController.m; sourceTree = "<group>"; };
+		D756DFB0504D4699B25E2D92 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +104,7 @@
 				A60B509D18D88E7500204565 /* Cocoa.framework */,
 				A60B50BC18D88E7500204565 /* XCTest.framework */,
 				A60B509F18D88E7500204565 /* Other Frameworks */,
+				D756DFB0504D4699B25E2D92 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

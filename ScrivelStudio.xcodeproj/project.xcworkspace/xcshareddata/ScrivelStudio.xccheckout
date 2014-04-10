@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A0591E8E-1068-47F3-A68D-AAEAF404CD92</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ScrivelStudio</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F8F576FB-CC1D-4623-B225-B71D76BBD0CB</key>
+		<string>ssh://github.com/scrivel/ScrivelStudio.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ScrivelStudio.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F8F576FB-CC1D-4623-B225-B71D76BBD0CB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/scrivel/ScrivelStudio.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F8F576FB-CC1D-4623-B225-B71D76BBD0CB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F8F576FB-CC1D-4623-B225-B71D76BBD0CB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ScrivelStudio</string>
+		</dict>
+	</array>
+</dict>
+</plist>
