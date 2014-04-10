@@ -1,11 +1,27 @@
-<div class="ss-method-chain-target ss-method-chain-target-<%= get('target') %>"><%= get("target") %></div>
-<ul class="<%= view_helper.list_class %> ss-method-list">
-<% _.each(get("methods"), function(m,i) { %>
-  <li class="ss-method-name"><%= m.name %></li>
-  <ul class="<%= view_helper.list_class %> ss-method-argument-list">
-    <% _.each(m.arguments, function(a, j) {  %>
-      <%= view_helper.draw_value(a) %>
+<div class="ss-method-chain-inner">
+  <div class="ss-method-chain-header">
+      <div class="ss-method-chain-toggler">
+        <button>></button>
+      </div>
+      <div class="ss-method-chain-script-representation">
+        <div><%= scriptRepresentation() %></div>
+      </div>
+  </div>
+  <div class="ss-method-chain-description ss-hidden">
+    <div class="ss-method-chain-target ss-method-chain-target-<%= get('target') %> ss-hidden"><%= get("target") %></div>
+    <ul class="<%= viewHelper.list_class %> ss-method-list">
+    <% _.each(get("methods"), function(m,i) { %>
+      <li class="ss-method">
+        <div class="ss-method-name"><%= m.name %></div>
+        <% if (m.arguments.length > 0 ) { %>
+        <ol class="<%= viewHelper.list_class %> ss-method-argument-list">
+          <% _.each(m.arguments, function(a, j) {  %>
+            <%= viewHelper.draw_value(a) %>
+          <% }); %>
+        </ol>
+        <% } %>
+      </li>
     <% }); %>
-  </ul>
-<% }); %>
-</ul>
+    </ul>
+  </div>
+</div

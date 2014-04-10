@@ -9,8 +9,6 @@ $ ->
   'use strict'
   # appを作成
   window.app = new ss.App
-  # グラフィカルエディタを作成
-  app.graphical_editor = new ss.Models.GraphicalEditor
   # Demoスクリプトを読み込み
   $.ajax
     url : "./data/demo.sescript.json"

@@ -9,11 +9,12 @@ class ss.ViewHelpers.MethodChain
       cls = "ss-value"
       if _.isString val
         cls += " ss-value-string"
+        val = "\"#{val}\""
       else if _.isNumber val
         cls += " ss-value-number"
       else if _.isBoolean val
         cls += " ss-value-boolean"
-      return "<li class=\"ss-method-argument-value #{cls}\">#{val}</li>"
+      return "<li><span class=\"ss-method-argument-value #{cls}\">#{val}</span></li>"
   draw_array: (arr) ->
     html = "<ul class=\"#{@list_class} ss-method-argument-array\">"
     _.each arr, (v,i) =>

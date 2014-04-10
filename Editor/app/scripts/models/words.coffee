@@ -6,7 +6,7 @@ class ss.Models.Words extends ScrivelStudio.Models.Element
     super obj
 
   defaults: {
-    "character" : null
+    "character" : ""
     "arguments" : [
       "",
       {}

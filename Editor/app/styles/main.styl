@@ -1,31 +1,103 @@
+ellipsis()
+  overflow hidden
+  white-space nowrap
+  text-overflow ellipsis
+  -webkit-text-overflow ellipsis
+clearfix()
+  display  inline-block
+ &after
+  content  "."
+  display  block
+  height  0
+  font-size 0
+  clear  both
+  visibility hidden
+
 body
   background-color white
   margin 0
   padding 0
 
+// Selector
+
+.ss-hidden
+  display none!important
+.ss-selected
+  border 2px solid #4455ff!important
+  background-color #dedeff!important
+
+// Wrapper
 #ss-wrapper
   padding 15px
 
-ul.ss-list
+// Controls
+
+//#ss-graphical-editor, #ss-script-editor
+//  width 45%
+// Graphical Editor
+.ss-list
   margin .5em
   padding-left 10px
   li
     list-style none
+ol.ss-list
+  li
+    list-style square
+.ss-object
+  box-sizing: border-box;
 .ss-method-chain
+  width 100%
   border-radius 6px
   background-color #f7f7f9
-  border 1px solid #e1e1e8
-  padding 10px
+  border 2px solid #e1e1e8
   margin-bottom 10px
   &:hover
     background-color #f7f7ff
-
+.ss-method-chain-inner
+  padding 10px
+.ss-method-chain-toggler
+  padding-right 10px
+.ss-method-chain-description
+  width 100%
+    display table
+  > div
+    display table-cell
+.ss-method-chain-header
+  // clearfix()
+  display table
+  > div
+    display table-cell
 .ss-method-chain-target
+  padding-right 10px
   font-weight bold
   font-size 18px
+.ss-method-chain-script-representation
+  word-break break-all
+.ss-method
+  border 1px solid #ccc
+  border-radius 4px
+  padding 10px
+  margin-bottom 10px
+  &:hover
+    background-color #fff7f7
 .ss-value-string
   color red
 .ss-value-number
   color blue
 .ss-value-boolean
   color purple
+
+// Words
+
+.ss-words
+  display table
+  margin-bottom 10px
+  &> div
+    display table-cell
+    vertical-align top
+.ss-words-name
+  font-weight bold
+  min-width 44px
+  padding-right 10px
+.ss-words-text
+  min-width 10px
