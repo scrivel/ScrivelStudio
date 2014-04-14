@@ -65,7 +65,7 @@
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="SlE-Qn-CCi">
-                                    <rect key="frame" x="1" y="362" width="0.0" height="16"/>
+                                    <rect key="frame" x="-100" y="-100" width="0.0" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="yjz-hM-vHC">
@@ -122,7 +122,7 @@
                 </constraints>
             </view>
             <connections>
-                <binding destination="-2" name="documentEdited" keyPath="self" id="eMT-dx-jka"/>
+                <binding destination="-2" name="documentEdited" keyPath="self.fileEditted" id="lC3-W6-4Ob"/>
                 <binding destination="-2" name="representedFilename" keyPath="self.filePath" id="DFx-A8-2JD"/>
                 <binding destination="-2" name="title" keyPath="self.fileTitle" previousBinding="DFx-A8-2JD" id="opD-UK-CqN"/>
             </connections>
@@ -134,8 +134,8 @@
             </declaredKeys>
             <connections>
                 <binding destination="-2" name="contentArray" keyPath="self.directoryContents" id="UsI-YU-LEF"/>
-                <binding destination="-2" name="contentArrayForMultipleSelection" keyPath="self.selectedItems" previousBinding="UsI-YU-LEF" id="2bN-Rq-q1D"/>
                 <binding destination="-2" name="selectionIndexPaths" keyPath="self.selectedIndexPaths" id="yxZ-fU-u3J"/>
+                <binding destination="-2" name="contentArrayForMultipleSelection" keyPath="self.selectedItems" previousBinding="UsI-YU-LEF" id="2bN-Rq-q1D"/>
                 <binding destination="-2" name="sortDescriptors" keyPath="self.sortDescriptors" previousBinding="yxZ-fU-u3J" id="nDS-nX-tlO"/>
             </connections>
         </treeController>

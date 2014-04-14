@@ -16,6 +16,7 @@
 @interface SSMainWindowController ()
 {
     SSFileItem *_rootItem;
+    MGSFragaria *_fragaria;
     NSMutableArray *__selectedItems;
     NSMutableArray *__selectedIndexPaths;
     NSMutableDictionary *_iconsForFileType;
@@ -37,6 +38,7 @@
         _sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"index" ascending:YES]];
         __selectedIndexPaths = [NSMutableArray new];
         __selectedItems = [NSMutableArray new];
+        _fileEditted = NO;
         _iconsForFileType = [NSMutableDictionary new];
     }
     return self;
@@ -66,6 +68,7 @@
     MGSFragaria *fragaria = [MGSFragaria new];
     [fragaria setObject:self forKey:MGSFODelegate];
     [fragaria embedInView:self.contentView];
+    _fragaria = fragaria;
 }
 
 #pragma mark - 
@@ -73,6 +76,7 @@
 - (void)textDidBeginEditing:(NSNotification *)notification
 {
     NSLog(@"%s",__PRETTY_FUNCTION__);
+    self.fileEditted = YES;
 }
 
 - (void)textDidChange:(NSNotification *)notification
@@ -104,15 +108,36 @@
 {
     NSLog(@"selection change : %@", self.selectedIndexPaths);
     NSInteger i = self.fileOutlineView.selectedRow;
-    NSTreeNode *treeNode = [self.fileOutlineView itemAtRow:i];
-    SSFileItem *item = treeNode.representedObject;
-    self.filePath = item.path;
-    self.fileTitle = item.title;
+    if (i > 0) {
+        NSTreeNode *treeNode = [self.fileOutlineView itemAtRow:i];
+        SSFileItem *item = treeNode.representedObject;
+        self.filePath = item.path;
+        self.fileTitle = item.title;
+        self.selectedItems = @[item];
+    }
 }
 
-- (void)outlineView:(NSOutlineView *)outlineView didClickTableColumn:(NSTableColumn *)tableColumn
+- (void)setSelectedItems:(NSArray *)selectedItems
 {
-    NSLog(@"did click column : %@", tableColumn);
+    if (selectedItems != _selectedItems) {
+        SSFileItem *item = [selectedItems firstObject];
+        if (item.isLeaf) {
+            NSError *e = nil;
+            NSData *data = [NSData dataWithContentsOfFile:item.path options:0 error:&e];
+            if (e) {
+                [NSAlert alertWithError:e];
+                return;
+            }
+            NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            if (!str) {
+                [NSAlert alertWithMessageText:NSLocalizedString(@"エラー", ) defaultButton:@"OK" alternateButton:nil otherButton:nil informativeTextWithFormat:@"読み込めないファイルです",nil];
+                return;
+            }
+            [_fragaria setString:str];
+        }
+        self.fileEditted = NO;
+        _selectedItems = selectedItems;
+    }
 }
 
 - (void)outlineView:(NSOutlineView *)outlineView willDisplayCell:(id)aCell forTableColumn:(NSTableColumn *)tableColumn item:(id)anItem
@@ -124,22 +149,21 @@
         NSString *ext = item.path.pathExtension;
         NSImage *image;
         static NSSize imageSize = (NSSize){kRowHeight,kRowHeight};
-        if (item.isLeaf) {
-            image = _iconsForFileType[ext];
-            if (!image) {
+        image = _iconsForFileType[ext];
+        if (!image) {
+            if (ext.length > 0) {
                 image = [[NSWorkspace sharedWorkspace] iconForFileType:ext];
-                if (image) {
-                    [image setSize:imageSize];
-                    [_iconsForFileType setObject:image forKey:ext];
+            }else{
+                if (item.isLeaf) {
+                    image = [[NSWorkspace sharedWorkspace] iconForFile:item.path];
+                }else{
+                    image = [[NSWorkspace sharedWorkspace] iconForFileType:NSFileTypeForHFSTypeCode(kGenericFolderIcon)];
+                    ext = kFolderIconKey;
                 }
             }
-        }else{
-            image = _iconsForFileType[kFolderIconKey];
-            if (!image) {
-                // folder
-                image = [[NSWorkspace sharedWorkspace] iconForFileType:NSFileTypeForHFSTypeCode(kGenericFolderIcon)];
+            if (image && ext.length > 0) {
                 [image setSize:imageSize];
-                [_iconsForFileType setObject:image forKey:kFolderIconKey];
+                [_iconsForFileType setObject:image forKey:ext];
             }
         }
         if (image) {
