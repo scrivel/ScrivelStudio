@@ -8,8 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 #import <MGSFragaria.h>
+#import "VDKQueue.h"
 
-@interface SSMainWindowController : NSWindowController<NSOutlineViewDelegate, MGSFragariaTextViewDelegate, NSTextDelegate>
+@interface SSMainWindowController : NSWindowController<NSOutlineViewDelegate, MGSFragariaTextViewDelegate, NSTextDelegate, VDKQueueDelegate>
 
 @property (nonatomic) NSURL *directoryURL;
 @property (nonatomic) NSString * filePath;
@@ -19,5 +20,7 @@
 @property (nonatomic) NSArray * selectedIndexPaths;
 @property (nonatomic, readonly) NSArray * sortDescriptors;
 @property (nonatomic) BOOL fileEditted;
+
+@property (strong) IBOutlet NSTreeController *treeController;
 
 @end

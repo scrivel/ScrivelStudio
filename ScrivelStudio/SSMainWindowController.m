@@ -17,9 +17,11 @@
 {
     SSFileItem *_rootItem;
     MGSFragaria *_fragaria;
+    VDKQueue *_watcher;
     NSMutableArray *__selectedItems;
     NSMutableArray *__selectedIndexPaths;
     NSMutableDictionary *_iconsForFileType;
+    NSMutableDictionary *_expandedTreeNodes;
 }
 @property (weak) IBOutlet NSOutlineView *fileOutlineView;
 @property (weak) IBOutlet NSView *contentView;
@@ -39,7 +41,10 @@
         __selectedIndexPaths = [NSMutableArray new];
         __selectedItems = [NSMutableArray new];
         _fileEditted = NO;
+        _watcher = [VDKQueue new];
+        _watcher.delegate = self;
         _iconsForFileType = [NSMutableDictionary new];
+        _expandedTreeNodes = [NSMutableDictionary new];
     }
     return self;
 }
@@ -89,11 +94,32 @@
     NSLog(@"%s",__PRETTY_FUNCTION__);
 }
 
+#pragma mark - VDKQueue Delegate
+
+- (void)VDKQueue:(VDKQueue *)queue receivedNotification:(NSString *)noteName forPath:(NSString *)fpath
+{
+    NSLog(@"%s %@, %@",__PRETTY_FUNCTION__, noteName, fpath);
+    NSTreeNode *node = _expandedTreeNodes[fpath];
+    [self.treeController rearrangeObjects];
+    NSAssert(node, @"");
+    if ([noteName isEqualToString:VDKQueueWriteNotification]) {
+        // 追加
+    }else if ([noteName isEqualToString:VDKQueueRenameNotification]){
+        // rename
+    }else if ([noteName isEqualToString:VDKQueueDeleteNotification]){
+        // 削除
+    }else if ([noteName isEqualToString:VDKQueueLinkCountChangeNotification]){
+        // フォルダ作成？
+    }
+}
+
 #pragma mark -
 
 - (void)setDirectoryURL:(NSURL *)directoryURL
 {
+    // ルートアイテムを作る
     _rootItem = [[SSFileItem alloc] initWithPath:directoryURL.path index:0 parent:nil];
+    // set
     _directoryURL = directoryURL;
 }
 
@@ -115,6 +141,26 @@
         self.fileTitle = item.title;
         self.selectedItems = @[item];
     }
+}
+
+- (void)outlineViewItemDidExpand:(NSNotification *)notification
+{
+    NSTreeNode *obj = notification.userInfo[@"NSObject"];
+    SSFileItem *item = [obj representedObject];
+    NSAssert(item, @"");
+    [_watcher addPath:item.path];
+    [_expandedTreeNodes setObject:obj forKey:item.path];
+    NSLog(@"%s,%@",__PRETTY_FUNCTION__,notification.userInfo);
+}
+
+- (void)outlineViewItemDidCollapse:(NSNotification *)notification
+{
+    NSTreeNode *obj = notification.userInfo[@"NSObject"];
+    SSFileItem *item = [obj representedObject];
+    NSAssert(item, @"");
+    [_watcher removePath:item.path];
+    [_expandedTreeNodes removeObjectForKey:item.path];
+    NSLog(@"%s,%@",__PRETTY_FUNCTION__,notification.userInfo);
 }
 
 - (void)setSelectedItems:(NSArray *)selectedItems
@@ -149,26 +195,26 @@
         NSString *ext = item.path.pathExtension;
         NSImage *image;
         static NSSize imageSize = (NSSize){kRowHeight,kRowHeight};
+        if (!_iconsForFileType[kFolderIconKey]) {
+            NSImage *folderIcon = [[NSWorkspace sharedWorkspace] iconForFileType:NSFileTypeForHFSTypeCode(kGenericFolderIcon)];
+            [folderIcon setSize:imageSize];
+            _iconsForFileType[kFolderIconKey] = folderIcon;
+        }
+        if (ext.length == 0 && !item.isLeaf) {
+            ext = kFolderIconKey;
+        }
         image = _iconsForFileType[ext];
         if (!image) {
             if (ext.length > 0) {
+                // 拡張子があれば取得
                 image = [[NSWorkspace sharedWorkspace] iconForFileType:ext];
-            }else{
-                if (item.isLeaf) {
-                    image = [[NSWorkspace sharedWorkspace] iconForFile:item.path];
-                }else{
-                    image = [[NSWorkspace sharedWorkspace] iconForFileType:NSFileTypeForHFSTypeCode(kGenericFolderIcon)];
-                    ext = kFolderIconKey;
-                }
-            }
-            if (image && ext.length > 0) {
-                [image setSize:imageSize];
                 [_iconsForFileType setObject:image forKey:ext];
+            }else{
+                image = [[NSWorkspace sharedWorkspace] iconForFile:item.path];
             }
+            [image setSize:imageSize];
         }
-        if (image) {
-            [imageCell setImage:image];
-        }
+        [imageCell setImage:image];
     }
 }
 
