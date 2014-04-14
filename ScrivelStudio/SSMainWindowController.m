@@ -21,6 +21,8 @@
     NSMutableDictionary *_iconsForFileType;
 }
 @property (weak) IBOutlet NSOutlineView *fileOutlineView;
+@property (weak) IBOutlet NSView *contentView;
+
 @end
 
 @implementation SSMainWindowController
@@ -59,7 +61,31 @@
     // setup delegate & data source
     self.fileOutlineView.delegate = self;
     self.fileOutlineView.selectionHighlightStyle = NSTableViewSelectionHighlightStyleSourceList;
+    
+    // setupfragaria
+    MGSFragaria *fragaria = [MGSFragaria new];
+    [fragaria setObject:self forKey:MGSFODelegate];
+    [fragaria embedInView:self.contentView];
 }
+
+#pragma mark - 
+
+- (void)textDidBeginEditing:(NSNotification *)notification
+{
+    NSLog(@"%s",__PRETTY_FUNCTION__);
+}
+
+- (void)textDidChange:(NSNotification *)notification
+{
+    NSLog(@"%s",__PRETTY_FUNCTION__);
+}
+
+- (void)textDidEndEditing:(NSNotification *)notification
+{
+    NSLog(@"%s",__PRETTY_FUNCTION__);
+}
+
+#pragma mark -
 
 - (void)setDirectoryURL:(NSURL *)directoryURL
 {
@@ -77,6 +103,11 @@
 - (void)outlineViewSelectionDidChange:(NSNotification *)notification
 {
     NSLog(@"selection change : %@", self.selectedIndexPaths);
+    NSInteger i = self.fileOutlineView.selectedRow;
+    NSTreeNode *treeNode = [self.fileOutlineView itemAtRow:i];
+    SSFileItem *item = treeNode.representedObject;
+    self.filePath = item.path;
+    self.fileTitle = item.title;
 }
 
 - (void)outlineView:(NSOutlineView *)outlineView didClickTableColumn:(NSTableColumn *)tableColumn
