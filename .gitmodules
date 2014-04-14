@@ -1,3 +1,6 @@
 [submodule "ScrivelEngine"]
 	path = ScrivelEngine
 	url = https://github.com/scrivel/ScrivelEngine
+[submodule "External/VDKQueue"]
+	path = External/VDKQueue
+	url = https://github.com/bdkjones/VDKQueue

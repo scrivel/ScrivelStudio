@@ -26,6 +26,8 @@
 		A614098C18F6817D00E0687E /* ParseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A614098918F6817D00E0687E /* ParseKit.framework */; };
 		A6E7466618FB851900FAA28A /* SSFileItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E7466518FB851900FAA28A /* SSFileItem.m */; };
 		A6E7466918FB952900FAA28A /* ImageAndTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E7466818FB952900FAA28A /* ImageAndTextCell.m */; };
+		A6E7467218FBC14200FAA28A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A6E7466F18FBC14200FAA28A /* README.md */; };
+		A6E7467318FBC14200FAA28A /* VDKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E7467118FBC14200FAA28A /* VDKQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,9 @@
 		A6E7466518FB851900FAA28A /* SSFileItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFileItem.m; sourceTree = "<group>"; };
 		A6E7466718FB952900FAA28A /* ImageAndTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageAndTextCell.h; sourceTree = "<group>"; };
 		A6E7466818FB952900FAA28A /* ImageAndTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageAndTextCell.m; sourceTree = "<group>"; };
+		A6E7466F18FBC14200FAA28A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		A6E7467018FBC14200FAA28A /* VDKQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDKQueue.h; sourceTree = "<group>"; };
+		A6E7467118FBC14200FAA28A /* VDKQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDKQueue.m; sourceTree = "<group>"; };
 		D756DFB0504D4699B25E2D92 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -100,6 +105,7 @@
 		A60B509118D88E7400204565 = {
 			isa = PBXGroup;
 			children = (
+				A6E7466D18FBC13900FAA28A /* External */,
 				A60B50A318D88E7500204565 /* ScrivelStudio */,
 				A60B50C118D88E7500204565 /* ScrivelStudioTests */,
 				A60B509C18D88E7500204565 /* Frameworks */,
@@ -198,6 +204,25 @@
 			name = MainWindow;
 			sourceTree = "<group>";
 		};
+		A6E7466D18FBC13900FAA28A /* External */ = {
+			isa = PBXGroup;
+			children = (
+				A6E7466E18FBC14200FAA28A /* VDKQueue */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		A6E7466E18FBC14200FAA28A /* VDKQueue */ = {
+			isa = PBXGroup;
+			children = (
+				A6E7466F18FBC14200FAA28A /* README.md */,
+				A6E7467018FBC14200FAA28A /* VDKQueue.h */,
+				A6E7467118FBC14200FAA28A /* VDKQueue.m */,
+			);
+			name = VDKQueue;
+			path = External/VDKQueue;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -275,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6E7467218FBC14200FAA28A /* README.md in Resources */,
 				A60B50A818D88E7500204565 /* InfoPlist.strings in Resources */,
 				A60B50D318D88EFF00204565 /* MainWindow.xib in Resources */,
 				A60B50B618D88E7500204565 /* Images.xcassets in Resources */,
@@ -303,6 +329,7 @@
 				A60B50D618D88F1D00204565 /* SSMainWindowController.m in Sources */,
 				A60B50B118D88E7500204565 /* SSAppDelegate.m in Sources */,
 				A60B50AA18D88E7500204565 /* main.m in Sources */,
+				A6E7467318FBC14200FAA28A /* VDKQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
