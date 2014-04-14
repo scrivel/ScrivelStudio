@@ -20,6 +20,12 @@
 		A60B50C818D88E7500204565 /* ScrivelStudioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A60B50C718D88E7500204565 /* ScrivelStudioTests.m */; };
 		A60B50D318D88EFF00204565 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A60B50D118D88EFF00204565 /* MainWindow.xib */; };
 		A60B50D618D88F1D00204565 /* SSMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = A60B50D518D88F1D00204565 /* SSMainWindowController.m */; };
+		A614097018F6806F00E0687E /* libScrivelEngineMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A614096F18F6806F00E0687E /* libScrivelEngineMac.a */; };
+		A614098A18F6817D00E0687E /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A614098718F6817D00E0687E /* Mantle.framework */; };
+		A614098B18F6817D00E0687E /* MGSFragaria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A614098818F6817D00E0687E /* MGSFragaria.framework */; };
+		A614098C18F6817D00E0687E /* ParseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A614098918F6817D00E0687E /* ParseKit.framework */; };
+		A6E7466618FB851900FAA28A /* SSFileItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E7466518FB851900FAA28A /* SSFileItem.m */; };
+		A6E7466918FB952900FAA28A /* ImageAndTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E7466818FB952900FAA28A /* ImageAndTextCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,14 @@
 		A60B50D218D88EFF00204565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		A60B50D418D88F1D00204565 /* SSMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMainWindowController.h; sourceTree = "<group>"; };
 		A60B50D518D88F1D00204565 /* SSMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMainWindowController.m; sourceTree = "<group>"; };
+		A614096F18F6806F00E0687E /* libScrivelEngineMac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libScrivelEngineMac.a; path = ScrivelEngine/build/Debug/libScrivelEngineMac.a; sourceTree = "<group>"; };
+		A614098718F6817D00E0687E /* Mantle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mantle.framework; path = ScrivelEngine/External/Mantle/build/Debug/Mantle.framework; sourceTree = "<group>"; };
+		A614098818F6817D00E0687E /* MGSFragaria.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MGSFragaria.framework; path = ScrivelEngine/External/Fragaria/build/Debug/MGSFragaria.framework; sourceTree = "<group>"; };
+		A614098918F6817D00E0687E /* ParseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseKit.framework; path = ScrivelEngine/External/ParseKit/build/Debug/ParseKit.framework; sourceTree = "<group>"; };
+		A6E7466418FB851900FAA28A /* SSFileItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSFileItem.h; sourceTree = "<group>"; };
+		A6E7466518FB851900FAA28A /* SSFileItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFileItem.m; sourceTree = "<group>"; };
+		A6E7466718FB952900FAA28A /* ImageAndTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageAndTextCell.h; sourceTree = "<group>"; };
+		A6E7466818FB952900FAA28A /* ImageAndTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageAndTextCell.m; sourceTree = "<group>"; };
 		D756DFB0504D4699B25E2D92 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -63,6 +77,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A614098A18F6817D00E0687E /* Mantle.framework in Frameworks */,
+				A614098B18F6817D00E0687E /* MGSFragaria.framework in Frameworks */,
+				A614098C18F6817D00E0687E /* ParseKit.framework in Frameworks */,
+				A614097018F6806F00E0687E /* libScrivelEngineMac.a in Frameworks */,
 				A60B509E18D88E7500204565 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +119,10 @@
 		A60B509C18D88E7500204565 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A614098718F6817D00E0687E /* Mantle.framework */,
+				A614098818F6817D00E0687E /* MGSFragaria.framework */,
+				A614098918F6817D00E0687E /* ParseKit.framework */,
+				A614096F18F6806F00E0687E /* libScrivelEngineMac.a */,
 				A60B509D18D88E7500204565 /* Cocoa.framework */,
 				A60B50BC18D88E7500204565 /* XCTest.framework */,
 				A60B509F18D88E7500204565 /* Other Frameworks */,
@@ -165,8 +187,12 @@
 		A60B50D718D9C47300204565 /* MainWindow */ = {
 			isa = PBXGroup;
 			children = (
+				A6E7466718FB952900FAA28A /* ImageAndTextCell.h */,
+				A6E7466818FB952900FAA28A /* ImageAndTextCell.m */,
 				A60B50D418D88F1D00204565 /* SSMainWindowController.h */,
 				A60B50D518D88F1D00204565 /* SSMainWindowController.m */,
+				A6E7466418FB851900FAA28A /* SSFileItem.h */,
+				A6E7466518FB851900FAA28A /* SSFileItem.m */,
 				A60B50D118D88EFF00204565 /* MainWindow.xib */,
 			);
 			name = MainWindow;
@@ -272,6 +298,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6E7466918FB952900FAA28A /* ImageAndTextCell.m in Sources */,
+				A6E7466618FB851900FAA28A /* SSFileItem.m in Sources */,
 				A60B50D618D88F1D00204565 /* SSMainWindowController.m in Sources */,
 				A60B50B118D88E7500204565 /* SSAppDelegate.m in Sources */,
 				A60B50AA18D88E7500204565 /* main.m in Sources */,
@@ -372,6 +400,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SRCROOT}/ScrivelEngine/**",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -405,6 +438,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SRCROOT}/ScrivelEngine/**",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
 			};
@@ -415,9 +453,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ScrivelEngine/External/Mantle/build/Debug",
+					"$(PROJECT_DIR)/ScrivelEngine/External/Fragaria/build/Debug",
+					"$(PROJECT_DIR)/ScrivelEngine/External/ParseKit/build/Debug",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ScrivelStudio/ScrivelStudio-Prefix.pch";
 				INFOPLIST_FILE = "ScrivelStudio/ScrivelStudio-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ScrivelEngine/build/Debug",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -428,9 +476,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ScrivelEngine/External/Mantle/build/Debug",
+					"$(PROJECT_DIR)/ScrivelEngine/External/Fragaria/build/Debug",
+					"$(PROJECT_DIR)/ScrivelEngine/External/ParseKit/build/Debug",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ScrivelStudio/ScrivelStudio-Prefix.pch";
 				INFOPLIST_FILE = "ScrivelStudio/ScrivelStudio-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ScrivelEngine/build/Debug",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

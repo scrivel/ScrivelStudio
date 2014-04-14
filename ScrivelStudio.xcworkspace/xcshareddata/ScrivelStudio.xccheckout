@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>01894234-950D-4BE2-9D2F-A4AFA1FC1CD1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ScrivelStudio</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>22A712AB-E62C-4C75-A93F-B3CEB0B16E46</key>
+		<string>http://github.com/scrivel/ScrivelEngine</string>
+		<key>4ED9F34B-9D39-449C-938B-A8A4B641E6CD</key>
+		<string>ssh://github.com/scrivel/ScrivelStudio.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ScrivelStudio.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>22A712AB-E62C-4C75-A93F-B3CEB0B16E46</key>
+		<string>../ScrivelEngine</string>
+		<key>4ED9F34B-9D39-449C-938B-A8A4B641E6CD</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/scrivel/ScrivelStudio.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4ED9F34B-9D39-449C-938B-A8A4B641E6CD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>22A712AB-E62C-4C75-A93F-B3CEB0B16E46</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ScrivelEngine</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4ED9F34B-9D39-449C-938B-A8A4B641E6CD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ScrivelStudio</string>
+		</dict>
+	</array>
+</dict>
+</plist>
