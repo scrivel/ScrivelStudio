@@ -1,0 +1,3 @@
+[submodule "ScrivelEngine"]
+	path = ScrivelEngine
+	url = https://github.com/scrivel/ScrivelEngine
