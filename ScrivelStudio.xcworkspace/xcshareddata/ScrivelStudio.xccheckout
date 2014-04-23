@@ -5,24 +5,56 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>01894234-950D-4BE2-9D2F-A4AFA1FC1CD1</string>
+	<string>0BCDEAE8-EDA9-4F45-8B65-D9858E607F24</string>
 	<key>IDESourceControlProjectName</key>
 	<string>ScrivelStudio</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>175FFF07-A724-4FCF-8ED2-AB9682778860</key>
+		<string>https://github.com/scrivel/parsekit</string>
+		<key>1A48B0B1-CFB2-4C63-902C-D9D8464BA685</key>
+		<string>https://github.com/jspahrsummers/xcconfigs.git</string>
 		<key>22A712AB-E62C-4C75-A93F-B3CEB0B16E46</key>
 		<string>http://github.com/scrivel/ScrivelEngine</string>
+		<key>3FB302F8-9874-4DDE-B1A1-703ED50658CE</key>
+		<string>https://github.com/keroxp/KXEventEmitter</string>
 		<key>4ED9F34B-9D39-449C-938B-A8A4B641E6CD</key>
 		<string>ssh://github.com/scrivel/ScrivelStudio.git</string>
+		<key>6378E4C2-7932-4B4C-9C3E-EF4ECA460934</key>
+		<string>https://github.com/bdkjones/VDKQueue</string>
+		<key>AE306762-19A0-45F1-B451-5260A8377E81</key>
+		<string>https://github.com/github/expecta.git</string>
+		<key>BE6F11FC-A073-4D15-ADAE-A749E5EE82F1</key>
+		<string>https://github.com/github/specta.git</string>
+		<key>C22DB8B3-A867-4344-A750-D94E19F9FFF5</key>
+		<string>https://github.com/scrivel/Fragaria</string>
+		<key>EE4F3451-8D4E-49CA-8AAD-0B9C81721770</key>
+		<string>https://github.com/MantleFramework/Mantle</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>ScrivelStudio.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>175FFF07-A724-4FCF-8ED2-AB9682778860</key>
+		<string>../ScrivelEngine/External/ParseKit</string>
+		<key>1A48B0B1-CFB2-4C63-902C-D9D8464BA685</key>
+		<string>../ScrivelEngine/External/Mantle/Configuration</string>
 		<key>22A712AB-E62C-4C75-A93F-B3CEB0B16E46</key>
 		<string>../ScrivelEngine</string>
+		<key>3FB302F8-9874-4DDE-B1A1-703ED50658CE</key>
+		<string>../ScrivelEngine/External/KXEventEmitter</string>
 		<key>4ED9F34B-9D39-449C-938B-A8A4B641E6CD</key>
 		<string>..</string>
+		<key>6378E4C2-7932-4B4C-9C3E-EF4ECA460934</key>
+		<string>../External/VDKQueue</string>
+		<key>AE306762-19A0-45F1-B451-5260A8377E81</key>
+		<string>../ScrivelEngine/External/Mantle/MantleTests/expecta</string>
+		<key>BE6F11FC-A073-4D15-ADAE-A749E5EE82F1</key>
+		<string>../ScrivelEngine/External/Mantle/MantleTests/specta</string>
+		<key>C22DB8B3-A867-4344-A750-D94E19F9FFF5</key>
+		<string>../ScrivelEngine/External/Fragaria</string>
+		<key>EE4F3451-8D4E-49CA-8AAD-0B9C81721770</key>
+		<string>../ScrivelEngine/External/Mantle</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/scrivel/ScrivelStudio.git</string>
@@ -32,6 +64,54 @@
 	<string>4ED9F34B-9D39-449C-938B-A8A4B641E6CD</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1A48B0B1-CFB2-4C63-902C-D9D8464BA685</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Configuration</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AE306762-19A0-45F1-B451-5260A8377E81</string>
+			<key>IDESourceControlWCCName</key>
+			<string>expecta</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C22DB8B3-A867-4344-A750-D94E19F9FFF5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Fragaria</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3FB302F8-9874-4DDE-B1A1-703ED50658CE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>KXEventEmitter</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EE4F3451-8D4E-49CA-8AAD-0B9C81721770</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Mantle</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>175FFF07-A724-4FCF-8ED2-AB9682778860</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ParseKit</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
@@ -47,6 +127,22 @@
 			<string>4ED9F34B-9D39-449C-938B-A8A4B641E6CD</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ScrivelStudio</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BE6F11FC-A073-4D15-ADAE-A749E5EE82F1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>specta</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6378E4C2-7932-4B4C-9C3E-EF4ECA460934</string>
+			<key>IDESourceControlWCCName</key>
+			<string>VDKQueue</string>
 		</dict>
 	</array>
 </dict>

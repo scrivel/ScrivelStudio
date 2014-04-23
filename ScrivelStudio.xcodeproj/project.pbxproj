@@ -28,6 +28,8 @@
 		A6E7466918FB952900FAA28A /* ImageAndTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E7466818FB952900FAA28A /* ImageAndTextCell.m */; };
 		A6E7467218FBC14200FAA28A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A6E7466F18FBC14200FAA28A /* README.md */; };
 		A6E7467318FBC14200FAA28A /* VDKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E7467118FBC14200FAA28A /* VDKQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A6F5897218FE5E2C005D3FD4 /* SceneWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6F5897118FE5E2C005D3FD4 /* SceneWindow.xib */; };
+		A6F5897518FE5E48005D3FD4 /* SSSceneWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F5897418FE5E48005D3FD4 /* SSSceneWindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,9 @@
 		A6E7466F18FBC14200FAA28A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		A6E7467018FBC14200FAA28A /* VDKQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDKQueue.h; sourceTree = "<group>"; };
 		A6E7467118FBC14200FAA28A /* VDKQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDKQueue.m; sourceTree = "<group>"; };
+		A6F5897118FE5E2C005D3FD4 /* SceneWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SceneWindow.xib; sourceTree = "<group>"; };
+		A6F5897318FE5E48005D3FD4 /* SSSceneWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSSceneWindowController.h; sourceTree = "<group>"; };
+		A6F5897418FE5E48005D3FD4 /* SSSceneWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSSceneWindowController.m; sourceTree = "<group>"; };
 		D756DFB0504D4699B25E2D92 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -153,6 +158,7 @@
 				A60B50AF18D88E7500204565 /* SSAppDelegate.h */,
 				A60B50B018D88E7500204565 /* SSAppDelegate.m */,
 				A60B50B218D88E7500204565 /* MainMenu.xib */,
+				A6F5897618FE5E52005D3FD4 /* SceneWindow */,
 				A60B50D718D9C47300204565 /* MainWindow */,
 				A60B50B518D88E7500204565 /* Images.xcassets */,
 				A60B50A418D88E7500204565 /* Supporting Files */,
@@ -221,6 +227,16 @@
 			);
 			name = VDKQueue;
 			path = External/VDKQueue;
+			sourceTree = "<group>";
+		};
+		A6F5897618FE5E52005D3FD4 /* SceneWindow */ = {
+			isa = PBXGroup;
+			children = (
+				A6F5897318FE5E48005D3FD4 /* SSSceneWindowController.h */,
+				A6F5897418FE5E48005D3FD4 /* SSSceneWindowController.m */,
+				A6F5897118FE5E2C005D3FD4 /* SceneWindow.xib */,
+			);
+			name = SceneWindow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +318,7 @@
 			files = (
 				A6E7467218FBC14200FAA28A /* README.md in Resources */,
 				A60B50A818D88E7500204565 /* InfoPlist.strings in Resources */,
+				A6F5897218FE5E2C005D3FD4 /* SceneWindow.xib in Resources */,
 				A60B50D318D88EFF00204565 /* MainWindow.xib in Resources */,
 				A60B50B618D88E7500204565 /* Images.xcassets in Resources */,
 				A60B50AE18D88E7500204565 /* Credits.rtf in Resources */,
@@ -328,6 +345,7 @@
 				A6E7466618FB851900FAA28A /* SSFileItem.m in Sources */,
 				A60B50D618D88F1D00204565 /* SSMainWindowController.m in Sources */,
 				A60B50B118D88E7500204565 /* SSAppDelegate.m in Sources */,
+				A6F5897518FE5E48005D3FD4 /* SSSceneWindowController.m in Sources */,
 				A60B50AA18D88E7500204565 /* main.m in Sources */,
 				A6E7467318FBC14200FAA28A /* VDKQueue.m in Sources */,
 			);
@@ -434,6 +452,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -471,6 +490,7 @@
 					"${SRCROOT}/ScrivelEngine/**",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -488,6 +508,10 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ScrivelStudio/ScrivelStudio-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = "ScrivelStudio/ScrivelStudio-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -511,6 +535,10 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ScrivelStudio/ScrivelStudio-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = "ScrivelStudio/ScrivelStudio-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
