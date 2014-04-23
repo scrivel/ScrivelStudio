@@ -21,7 +21,6 @@
 		A60B50D318D88EFF00204565 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A60B50D118D88EFF00204565 /* MainWindow.xib */; };
 		A60B50D618D88F1D00204565 /* SSMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = A60B50D518D88F1D00204565 /* SSMainWindowController.m */; };
 		A614097018F6806F00E0687E /* libScrivelEngineMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A614096F18F6806F00E0687E /* libScrivelEngineMac.a */; };
-		A614098A18F6817D00E0687E /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A614098718F6817D00E0687E /* Mantle.framework */; };
 		A614098B18F6817D00E0687E /* MGSFragaria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A614098818F6817D00E0687E /* MGSFragaria.framework */; };
 		A614098C18F6817D00E0687E /* ParseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A614098918F6817D00E0687E /* ParseKit.framework */; };
 		A6E7466618FB851900FAA28A /* SSFileItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E7466518FB851900FAA28A /* SSFileItem.m */; };
@@ -87,7 +86,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A614098A18F6817D00E0687E /* Mantle.framework in Frameworks */,
 				A614098B18F6817D00E0687E /* MGSFragaria.framework in Frameworks */,
 				A614098C18F6817D00E0687E /* ParseKit.framework in Frameworks */,
 				A614097018F6806F00E0687E /* libScrivelEngineMac.a in Frameworks */,
@@ -517,6 +515,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ScrivelEngine/build/Debug",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -544,6 +543,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ScrivelEngine/build/Debug",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

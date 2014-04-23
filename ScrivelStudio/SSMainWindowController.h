@@ -11,8 +11,14 @@
 #import "SSSceneWindowController.h"
 #import <ScrivelEngine.h>
 
+typedef NS_ENUM(NSInteger, SegmentType){
+    SegmentTypeScriptEditor = 0,
+    SegmentTypeGraphicalEditor = 1
+};
+
 @interface SSMainWindowController : NSWindowController
 <NSOutlineViewDelegate
+,NSOutlineViewDataSource
 ,MGSFragariaTextViewDelegate
 ,NSTextDelegate
 ,VDKQueueDelegate
@@ -29,7 +35,6 @@
 @property (nonatomic) BOOL fileSelected;
 @property (nonatomic) BOOL fileEditted;
 @property (nonatomic) BOOL isRunning;
-
-@property (strong) IBOutlet NSTreeController *treeController;
+@property (nonatomic) BOOL canMakeSequencize;
 
 @end
